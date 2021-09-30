@@ -33,6 +33,7 @@ body{
   background-color: #DDDDDD;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   
   /*Req 1*/
 }
@@ -58,7 +59,7 @@ a{
 
 /*Req 5*/
 /*Add selector and rule here*/
-a:focus{
+*:focus{
   border-style: dashed;
   color: #417243;
 }
@@ -100,7 +101,7 @@ You can use Inspect Element or your editor to find selectors. */
 thead tr:first-child th:first-child{border-top-left-radius: 50px;}
 thead tr:first-child th:last-child{border-top-right-radius: 50px}
 tbody tr:last-child th:first-child{border-bottom-left-radius: 50px}
-tbody tr:last-child th:last-child{border-bottom-right-radius: 50px}
+tbody tr:last-child td:last-child{border-bottom-right-radius: 50px}
 
 
 
@@ -116,5 +117,8 @@ footer{
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  position: absolute;
+  position: fixed;
+  bottom: 0x;
+  right: 0px;
+  left: 0px;
 }
